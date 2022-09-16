@@ -1,2 +1,4 @@
-# IPC2_Practica2_202110588
-![alt text](https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png)
+#Práctica 2
+##Geovanny Sebastián Herrera Claudio
+###Carné: 202110588  CUI: 3556794340101
+####Lab. Introducción a la Programación y Computación 2
