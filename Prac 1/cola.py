@@ -90,7 +90,7 @@ class ListaCircularDoble:
         aux=self.primero
         text=""
         text+="rankdir=LR; \n "
-        text+="node[shape=egg, style=filled, color=khaki, fontname=\"Century Gothic\"];  graph [fontname = \"Century Gothic\"];"
+        text+="node[shape=square, style=filled, color=grey, fontname=\"Century Gothic\"];  graph [fontname = \"Century Gothic\"];"
         text+="labelloc=\"t; \"label = \"Pedidos pendientes\";\n"
 
         while aux:
@@ -98,7 +98,7 @@ class ListaCircularDoble:
             text+="x"+str(aux.nombre)+"-> x"+str(aux.siguiente.nombre) +"\n"
             aux=aux.siguiente
             if aux!=self.primero:
-                text+="x"+str(aux.nombre)+"[dir=both label=\"Nombre ="+str(aux.nombre)+"\\ndescripcion = "+aux.descripcion+" \\ntiempo = "+str(aux.tiempo)+ "\"]"
+                text+="x"+str(aux.nombre)+"[dir=both label=\"Nombre ="+str(aux.nombre)+"\\ndescripcion = "+aux.descripcion+" \\nTiempo = "+str(aux.tiempo)+ " minutos\"]"
                 print(text)
             if aux==self.ultimo:
                 break

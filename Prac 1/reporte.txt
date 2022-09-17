@@ -1,9 +1,18 @@
 digraph G{
 
 rankdir=LR; 
- node[shape=egg, style=filled, color=khaki, fontname="Century Gothic"];  graph [fontname = "Century Gothic"];labelloc="t; "label = "Pedidos pendientes";
+ node[shape=square, style=filled, color=grey, fontname="Century Gothic"];  graph [fontname = "Century Gothic"];labelloc="t; "label = "Pedidos pendientes";
 xSalchicha[dir=both label="Nombre =Salchicha\nDescripción: = Hot dog de Salchicha \nTiempo = 2 minutos"]xSalchicha-> xChorizo
-xChorizo[dir=both label="Nombre =Chorizo\ndescripcion = Hot dog de Chorizo \ntiempo = 1"]xChorizo[dir=both label="Nombre =Chorizo\nDescripción: = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo-> xSalami
-xSalami[dir=both label="Nombre =Salami\ndescripcion = Hot dog de Salami \ntiempo = 1.5"]xSalami[dir=both label="Nombre =Salami\nDescripción: = Hot dog de Salami \nTiempo = 1.5 minutos"]xSalami-> xLonganiza
-xLonganiza[dir=both label="Nombre =Longaniza\ndescripcion = Hot dog de Longaniza \ntiempo = 4"]
+xChorizo[dir=both label="Nombre =Chorizo\ndescripcion = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo[dir=both label="Nombre =Chorizo\nDescripción: = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo-> xChorizo
+xChorizo[dir=both label="Nombre =Chorizo\ndescripcion = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo[dir=both label="Nombre =Chorizo\nDescripción: = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo-> xSalami
+xSalami[dir=both label="Nombre =Salami\ndescripcion = Hot dog de Salami \nTiempo = 1.5 minutos"]xSalami[dir=both label="Nombre =Salami\nDescripción: = Hot dog de Salami \nTiempo = 1.5 minutos"]xSalami-> xLonganiza
+xLonganiza[dir=both label="Nombre =Longaniza\ndescripcion = Hot dog de Longaniza \nTiempo = 4 minutos"]xLonganiza[dir=both label="Nombre =Longaniza\nDescripción: = Hot dog de Longaniza \nTiempo = 4 minutos"]xLonganiza-> xCostilla
+xCostilla[dir=both label="Nombre =Costilla\ndescripcion = Hot dog de Costilla \nTiempo = 6 minutos"]xCostilla[dir=both label="Nombre =Costilla\nDescripción: = Hot dog de Costilla \nTiempo = 6 minutos"]xCostilla-> xChorizo
+xChorizo[dir=both label="Nombre =Chorizo\ndescripcion = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo[dir=both label="Nombre =Chorizo\nDescripción: = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo-> xLonganiza
+xLonganiza[dir=both label="Nombre =Longaniza\ndescripcion = Hot dog de Longaniza \nTiempo = 4 minutos"]xLonganiza[dir=both label="Nombre =Longaniza\nDescripción: = Hot dog de Longaniza \nTiempo = 4 minutos"]xLonganiza-> xSalchicha
+xSalchicha[dir=both label="Nombre =Salchicha\ndescripcion = Hot dog de Salchicha \nTiempo = 2 minutos"]xSalchicha[dir=both label="Nombre =Salchicha\nDescripción: = Hot dog de Salchicha \nTiempo = 2 minutos"]xSalchicha-> xCostilla
+xCostilla[dir=both label="Nombre =Costilla\ndescripcion = Hot dog de Costilla \nTiempo = 6 minutos"]xCostilla[dir=both label="Nombre =Costilla\nDescripción: = Hot dog de Costilla \nTiempo = 6 minutos"]xCostilla-> xSalchicha
+xSalchicha[dir=both label="Nombre =Salchicha\ndescripcion = Hot dog de Salchicha \nTiempo = 2 minutos"]xSalchicha[dir=both label="Nombre =Salchicha\nDescripción: = Hot dog de Salchicha \nTiempo = 2 minutos"]xSalchicha-> xCostilla
+xCostilla[dir=both label="Nombre =Costilla\ndescripcion = Hot dog de Costilla \nTiempo = 6 minutos"]xCostilla[dir=both label="Nombre =Costilla\nDescripción: = Hot dog de Costilla \nTiempo = 6 minutos"]xCostilla-> xLonganiza
+xLonganiza[dir=both label="Nombre =Longaniza\ndescripcion = Hot dog de Longaniza \nTiempo = 4 minutos"]
 }
