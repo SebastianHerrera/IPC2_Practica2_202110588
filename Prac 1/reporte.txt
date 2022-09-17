@@ -1,0 +1,9 @@
+digraph G{
+
+rankdir=LR; 
+ node[shape=egg, style=filled, color=khaki, fontname="Century Gothic"];  graph [fontname = "Century Gothic"];labelloc="t; "label = "Pedidos pendientes";
+xSalchicha[dir=both label="Nombre =Salchicha\nDescripción: = Hot dog de Salchicha \nTiempo = 2 minutos"]xSalchicha-> xChorizo
+xChorizo[dir=both label="Nombre =Chorizo\ndescripcion = Hot dog de Chorizo \ntiempo = 1"]xChorizo[dir=both label="Nombre =Chorizo\nDescripción: = Hot dog de Chorizo \nTiempo = 1 minutos"]xChorizo-> xSalami
+xSalami[dir=both label="Nombre =Salami\ndescripcion = Hot dog de Salami \ntiempo = 1.5"]xSalami[dir=both label="Nombre =Salami\nDescripción: = Hot dog de Salami \nTiempo = 1.5 minutos"]xSalami-> xLonganiza
+xLonganiza[dir=both label="Nombre =Longaniza\ndescripcion = Hot dog de Longaniza \ntiempo = 4"]
+}

@@ -4,3 +4,4 @@ class Producto:
         self.descripcion = descripcion
         self.tiempo = tiempo
         self.siguiente = None
+        self.anterior = None

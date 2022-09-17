@@ -1,13 +1,16 @@
 from producto import Producto
-from cola import Cola
+from cola import ListaCircularDoble
 from email.mime import image
 from glob import glob
 from re import A
 from socket import NI_NUMERICHOST
 import tkinter
+import os 
+import graphviz
 import customtkinter
 import webbrowser
 
+lista = ListaCircularDoble()
 
 ##METODOS
 
@@ -88,8 +91,6 @@ def ordenes():
     
     global min
     min=0
-    global cola
-    cola = Cola()
 
     #LABEL DE TIEMPO
     def label_tiempo():
@@ -110,39 +111,40 @@ def ordenes():
         print("HotDog de Salchicha")
         global min
         min = min+2
-        new_hotdog = Producto("Salchicha","Hot dog de Salchicha", 2)
-        print("Sabor del HotDog "+new_hotdog.nombre)
-        print("Descripción: "+new_hotdog.descripcion)
-        print("Tiempo de espera: "+str(new_hotdog.tiempo)+" min")
-        cola.insertarCompra(new_hotdog)
-        print(cola.extraer())
+        lista.agregar_final("Salchicha","Hot dog de Salchicha", 2)
+        lista.crearReporte
         label_tiempo()
 
     def Chorizo():
         print("HotDog de Chorizo")
         global min
         min = min+3
-        new_hotdog = Producto("Chorizo","Hot dog de Chorizo", 1)
-        cola.insertarCompra(new_hotdog)
-        print(cola.extraer())
+        lista.agregar_final("Chorizo","Hot dog de Chorizo", 1)
+        lista.crearReporte()
         label_tiempo()
 
     def Salami():
         print("HotDog de Salami")
         global min
         min = min+1.5
+        lista.agregar_final("Salami","Hot dog de Salami", 1.5)
+        lista.crearReporte()
         label_tiempo()
 
     def Longaniza():
         print("HotDog de Longaniza")
         global min
         min = min+4
+        lista.agregar_final("Longaniza","Hot dog de Longaniza", 4)
+        lista.crearReporte()
         label_tiempo()
 
     def Costilla():
         print("HotDog de Costilla")
         global min
         min = min+6
+        lista.agregar_final("Costilla","Hot dog de Costilla", 6)
+        lista.crearReporte()
         label_tiempo()
 
 
